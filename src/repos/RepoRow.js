@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import { Row, Col, Card, CardHeader, CardBlock } from 'reactstrap'
 
@@ -8,15 +9,19 @@ class RepoRow extends Component {
       <Row>
         <Col>
           <Card>
-            <CardHeader>A Repo</CardHeader>
+            <CardHeader>{this.props.repo.name}</CardHeader>
             <CardBlock>
-              Hello
+              {this.props.repo.description}
             </CardBlock>
           </Card>
         </Col>
       </Row>
     )
   }
+}
+
+RepoRow.propTypes = {
+  repo: PropTypes.object.isRequired
 }
 
 export default RepoRow

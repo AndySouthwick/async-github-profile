@@ -1,5 +1,10 @@
-// Basic Async
+/*
 
-// Promises
+ */
+Primative - Value that doesn't change
+undefined
+null
 
-// Async/Await
+/*
+
+ */
