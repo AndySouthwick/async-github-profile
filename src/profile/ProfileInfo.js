@@ -8,10 +8,10 @@ class ProfileInfo extends Component {
   render () {
     return (
       <Card>
-        <CardImg top className="w-100" src={this.props.avatarUrl} alt="Aric Beagley"/>
+        <CardImg top className="w-100" src={this.props.avatarUrl} alt="Andrew Southwick"/>
         <CardBlock>
-          <CardTitle>Aric</CardTitle>
-          <CardSubtitle>abeagley</CardSubtitle>
+          <CardTitle>Andrew</CardTitle>
+          <CardSubtitle>Southwick</CardSubtitle>
         </CardBlock>
       </Card>
     )

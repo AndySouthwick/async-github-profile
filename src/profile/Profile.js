@@ -20,6 +20,7 @@ class Profile extends Component {
     this.state = {
       loading: false,
       userAvatar: '',
+        userName:'',
       userRepos: []
     }
   }
@@ -30,13 +31,13 @@ class Profile extends Component {
     })
 
     Promise.all([
-      axios.get('https://api.github.com/users/abeagley'),
-      axios.get('https://api.github.com/users/abeagley/repos')
+      axios.get('https://api.github.com/users/AndySouthwick'),
+      axios.get('https://api.github.com/users/AndySouthwick/repos')
     ]).then((values) => {
       this.setState({
         userAvatar: values[0].data.avatar_url,
         userRepos: values[1].data,
-        loading: false
+        loading: false, userName: values[0].data.name
       })
     })
   }
